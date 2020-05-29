@@ -27,6 +27,7 @@ class Solution:
                 if dp[i][j] and l + 1 > len(ans):
                     ans = s[i:j+1]
         return ans
-    
+
+
 a = Solution()
 a.longestPalindrome("babad")
