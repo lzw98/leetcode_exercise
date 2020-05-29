@@ -1,0 +1,3 @@
+- findRepeatNumber
+  - 这题与算法题287不同的地方在于数组长度短1(会产生out of index问题)，且含有0这一项，若将0放在第一个会进入死循环
+  - 对字典中的数据进行筛选[k for k,v in dct.itmes() if v>1]
