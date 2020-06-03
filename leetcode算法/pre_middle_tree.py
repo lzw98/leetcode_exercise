@@ -11,6 +11,7 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+#关键还是要清楚中序遍历与前序遍历有什么关系
 
 class Solution(object):
     def buildTree(self, preorder, inorder):
@@ -20,7 +21,7 @@ class Solution(object):
         :rtype: TreeNode
         """
         if not preorder or not inorder: # 记住 not null or not null 说明其中一个非空则return
-            return
+            return None
         root = TreeNode(preorder[0])
         idx = inorder.index(preorder[0])
         

@@ -60,5 +60,10 @@
     - string.isdigit()来判断该字符是否为数字
     - "".join(list)将里面的元素拼接为字符串
 
--1431 
+- 837 新21点问题，有意思的动态规划问题
+  - 当x>min(N,K+W-1),可以分成两种情况，其中N>K+W-1则K+W-1到N这一段是到不了的，故可以置为0，K到K+W-1置为1；若N< K+W-1 则N到K+W-1这一段其超出限制应该置为0
+  - $\mathrm{d} \mathrm{p}[\mathrm{x}]=\frac{d p[\mathrm{x}+1]+\mathrm{d} \mathrm{p}[\mathrm{x}+2]+\ldots+\mathrm{d} \mathrm{p}[\mathrm{x}+\mathrm{w}]}{w}$这个公式的表达代码可以为<p> for i in range (K-1,-1,-1):
+  for j in range(1,w+1): dp[i]+=dp[i+j]/w</p>
+  - 之后又考虑了复杂度问题进行了一定的优化，类似移动平均的简洁计算
+- 1431 
   - 简单不表
