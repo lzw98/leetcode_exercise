@@ -95,9 +95,15 @@
   - $\mathrm{d} \mathrm{p}[\mathrm{x}]=\frac{d p[\mathrm{x}+1]+\mathrm{d} \mathrm{p}[\mathrm{x}+2]+\ldots+\mathrm{d} \mathrm{p}[\mathrm{x}+\mathrm{w}]}{w}$这个公式的表达代码可以为<p> for i in range (K-1,-1,-1):
   for j in range(1,w+1): dp[i]+=dp[i+j]/w</p>
   - 之后又考虑了复杂度问题进行了一定的优化，类似移动平均的简洁计算
+
+- 897 递增顺序查找树
+  - 介绍使用了yield与yield from 的用法，提高了代码的简洁性
   
 - 1079 活字印刷
   - 将这道变成一个排列问题，将其转化一个树的问题
+
+- 1014 最佳观光组合
+  - 最关键是思维而大大降低了复杂度
 
 - 1300 转变数组后最接近目标值的数组和
   - bisect函数来获得切割列表的位置在何处
